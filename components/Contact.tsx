@@ -1,5 +1,6 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact: React.FC = () => {
   const [formState, setFormState] = useState({
@@ -10,11 +11,34 @@ const Contact: React.FC = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    emailjs.init('uVceVhH8T_dweNykB');
+  }, []);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-    setFormState({ name: '', email: '', phone: '', subject: '', message: '' });
+    setLoading(true);
+
+    try {
+      await emailjs.send('service_iad806q', 'template_aiztpqd', {
+        to_email: 'pethruscomercialab@gmail.com',
+        from_name: formState.name,
+        from_email: formState.email,
+        phone: formState.phone,
+        subject: formState.subject,
+        message: formState.message,
+      });
+
+      alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+      setFormState({ name: '', email: '', phone: '', subject: '', message: '' });
+    } catch (error) {
+      alert('Erro ao enviar mensagem. Tente novamente.');
+      console.error('Email error:', error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -141,9 +165,10 @@ const Contact: React.FC = () => {
 
                 <button 
                   type="submit"
-                  className="w-full py-4 bg-slate-900 text-white font-bold rounded-lg hover:bg-slate-800 transition-all shadow-lg flex items-center justify-center gap-2"
+                  disabled={loading}
+                  className="w-full py-4 bg-slate-900 text-white font-bold rounded-lg hover:bg-slate-800 transition-all shadow-lg flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Enviar Solicitação <i className="fas fa-paper-plane text-xs"></i>
+                  {loading ? 'Enviando...' : 'Enviar Solicitação'} <i className="fas fa-paper-plane text-xs"></i>
                 </button>
               </form>
             </div>
