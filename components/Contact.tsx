@@ -32,7 +32,9 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900">Nosso Escritório</h4>
-                  <p className="text-slate-600 text-sm font-light">Av. Paulista, 1000, 10º Andar - São Paulo, SP</p>
+                  <p className="text-slate-600 text-sm font-light mb-3">R. Floriano Peixoto, 401 - Sala B - Alvorada, Pimenta Bueno - RO, 76970-000</p>
+                  <p className="text-slate-600 text-sm font-light">Rua José Bonifácio, N° 663, Edifício Office Premium, Sala 01, Bairro Olaria. (Porto Velho)</p>
+                 
                 </div>
               </div>
 
@@ -42,7 +44,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900">Telefone</h4>
-                  <p className="text-slate-600 text-sm font-light">(11) 5555-1234</p>
+                  <p className="text-slate-600 text-sm font-light">(69) 98447-3193</p>
                 </div>
               </div>
 

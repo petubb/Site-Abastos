@@ -58,11 +58,11 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold text-lg mb-6">Horário de Atendimento</h4>
             <div className="text-sm text-slate-400 space-y-2">
-              <p>Segunda a Sexta: 09:00 - 18:00</p>
+              <p>Segunda a Sexta: 08:00 - 18:00</p>
               <p>Sábado: Somente com agendamento</p>
               <div className="pt-4">
                 <p className="text-xs text-slate-500 uppercase tracking-widest font-bold mb-2">Emergências Jurídicas</p>
-                <p className="text-amber-500 font-bold">(11) 99999-9999</p>
+                <p className="text-amber-500 font-bold">(69) 98447-3193</p>
               </div>
             </div>
           </div>
