@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
           <div className="inline-block px-4 py-1 mb-6 border-l-4 border-amber-600 bg-slate-800/50 text-amber-500 text-xs font-bold uppercase tracking-widest">
             Excelência em Direito
           </div>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight" style={{fontFamily: "'EB Garamond', serif", fontWeight: 700}}>
             Defendendo seus <span className="text-amber-500 underline decoration-amber-600/30 underline-offset-8">interesses</span> com integridade e rigor.
           </h1>
           <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-xl font-light leading-relaxed">
