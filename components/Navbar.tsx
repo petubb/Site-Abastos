@@ -20,7 +20,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <img 
-            src="https://raw.githubusercontent.com/petubb/Site-Abastos/main/image.png" 
+            src="https://raw.githubusercontent.com/petubb/Site-Abastos/main/logo%20ab.png" 
             alt="Andrade & Bastos Logo" 
             className={`${scrolled ? 'h-12' : 'h-16'} transition-all duration-300`}
           />
