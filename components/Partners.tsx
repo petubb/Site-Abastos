@@ -5,13 +5,13 @@ const partners = [
   {
     name: 'Dr. Noel Nunes de Andrade',
     oab: 'OAB/RO 1586',
-    image: 'https://github.com/petubb/Site-Abastos/blob/main/Dr%20Noel.jpg',
+    image: 'https://raw.githubusercontent.com/petubb/Site-Abastos/main/Dr_Noel.png',
     description: 'Com 38 anos de experiência, o advogado sócio possui diploma técnico em Contabilidade, é pós-graduado em Direito Civil pelo Instituto de Ensino Superior da Amazônia (IESA) e completa o seu currículo com duas novas pós-graduações em Processo Civil e Metodologia de Ensino Superior na UNISUL em Convênio com IELF e Direito Cooperativo na I.COOP em parceria com a Faculdade de Ensino e Pesquisa do Cooperativismo (FEPCOOP). É certificado pela OAB e foi juiz do Tribunal Regional Eleitoral de Rondônia.'
   },
   {
     name: 'Dr. Éder Timótio Pereira Bastos',
     oab: 'OAB/RO 2930',
-    image: 'https://github.com/petubb/Site-Abastos/blob/main/Dr_Eder_Bastos.png',
+    image: 'https://raw.githubusercontent.com/petubb/Site-Abastos/main/Eder%20055.JPG?raw=true',
     description: 'Há mais de 18 anos Dr. Éder Bastos atua na área do Direito Cívil, com atuação destacada no Direito Cooperativo. Graduado em Direito pela AESA/FARO – Faculdade de Ciências Humanas, Exatas e Letras de Rondônia, Pós Graduado em Direito Cooperativo, mestrando em Ciência Jurídica – Pela Universidade do vale do Itajaí – UNIVALI. Atuou como Presidente da Associação Comercial e Industrial de Pimenta Bueno – ACIPB, Conselheiro Estadual da OAB/RO e Presidente da Câmara de Dirigentes Lojista de Pimenta Bueno – CDL, atualmente é conselheiro no Conselho Deliberativo do SEBRAE de Rondônia.'
   }
 ];
