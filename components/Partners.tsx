@@ -6,13 +6,15 @@ const partners = [
     name: 'Dr. Noel Nunes de Andrade',
     oab: 'OAB/RO 1586',
     image: 'https://raw.githubusercontent.com/petubb/Site-Abastos/main/Dr_Noel.png',
-    description: 'Com 38 anos de experiência, o advogado sócio possui diploma técnico em Contabilidade, é pós-graduado em Direito Civil pelo Instituto de Ensino Superior da Amazônia (IESA) e completa o seu currículo com duas novas pós-graduações em Processo Civil e Metodologia de Ensino Superior na UNISUL em Convênio com IELF e Direito Cooperativo na I.COOP em parceria com a Faculdade de Ensino e Pesquisa do Cooperativismo (FEPCOOP). É certificado pela OAB e foi juiz do Tribunal Regional Eleitoral de Rondônia.'
+    description: 'Com 38 anos de experiência, o advogado sócio possui diploma técnico em Contabilidade, é pós-graduado em Direito Civil pelo Instituto de Ensino Superior da Amazônia (IESA) e completa o seu currículo com duas novas pós-graduações em Processo Civil e Metodologia de Ensino Superior na UNISUL em Convênio com IELF e Direito Cooperativo na I.COOP em parceria com a Faculdade de Ensino e Pesquisa do Cooperativismo (FEPCOOP). É certificado pela OAB e foi juiz do Tribunal Regional Eleitoral de Rondônia.',
+    linkedin: 'https://br.linkedin.com/in/noel-andrade-a125a8123?trk=people-guest_people_search-card'
   },
   {
     name: 'Dr. Éder Timótio Pereira Bastos',
     oab: 'OAB/RO 2930',
     image: 'https://raw.githubusercontent.com/petubb/Site-Abastos/main/Eder%20055.JPG?raw=true',
-    description: 'Há mais de 18 anos Dr. Éder Bastos atua na área do Direito Cívil, com atuação destacada no Direito Cooperativo. Graduado em Direito pela AESA/FARO – Faculdade de Ciências Humanas, Exatas e Letras de Rondônia, Pós Graduado em Direito Cooperativo, mestrando em Ciência Jurídica – Pela Universidade do vale do Itajaí – UNIVALI. Atuou como Presidente da Associação Comercial e Industrial de Pimenta Bueno – ACIPB, Conselheiro Estadual da OAB/RO e Presidente da Câmara de Dirigentes Lojista de Pimenta Bueno – CDL, atualmente é conselheiro no Conselho Deliberativo do SEBRAE de Rondônia.'
+    description: 'Há mais de 18 anos Dr. Éder Bastos atua na área do Direito Cívil, com atuação destacada no Direito Cooperativo. Graduado em Direito pela AESA/FARO – Faculdade de Ciências Humanas, Exatas e Letras de Rondônia, Pós Graduado em Direito Cooperativo, mestrando em Ciência Jurídica – Pela Universidade do vale do Itajaí – UNIVALI. Atuou como Presidente da Associação Comercial e Industrial de Pimenta Bueno – ACIPB, Conselheiro Estadual da OAB/RO e Presidente da Câmara de Dirigentes Lojista de Pimenta Bueno – CDL, atualmente é conselheiro no Conselho Deliberativo do SEBRAE de Rondônia.',
+    linkedin: 'https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://br.linkedin.com/in/dr-eder-tim%25C3%25B3tio-pereira-bastos-91482084&ved=2ahUKEwirwYzJz4iSAxV0ppUCHcOUFBoQFnoECBwQAQ&usg=AOvVaw2ibmJ9dZu6E2otormVGoRk'
   }
 ];
 
@@ -46,8 +48,8 @@ const Partners: React.FC = () => {
                   "{partner.description}"
                 </p>
                 <div className="mt-8 flex gap-4">
-                   <a href="#" className="text-slate-400 hover:text-amber-600 transition-colors"><i className="fab fa-linkedin text-xl"></i></a>
-                   <a href="#" className="text-slate-400 hover:text-amber-600 transition-colors"><i className="fas fa-envelope text-xl"></i></a>
+                   <a href={partner.linkedin} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-amber-600 transition-colors"><i className="fab fa-linkedin text-xl"></i></a>
+                   <a href="#contact" className="text-slate-400 hover:text-amber-600 transition-colors"><i className="fas fa-envelope text-xl"></i></a>
                 </div>
               </div>
             </div>
