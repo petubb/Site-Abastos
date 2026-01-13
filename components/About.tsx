@@ -17,7 +17,7 @@ const About: React.FC = () => {
             {/* Stats Overlay */}
             <div className="absolute -bottom-10 -right-10 bg-amber-600 p-8 rounded-xl shadow-2xl z-20 hidden md:block">
               <div className="text-center">
-                <p className="text-4xl font-bold mb-1">15+</p>
+                <p className="text-4xl font-bold mb-1">+20</p>
                 <p className="text-xs uppercase tracking-widest font-bold">Anos de Experiência</p>
               </div>
             </div>
@@ -28,6 +28,8 @@ const About: React.FC = () => {
             <h3 className="text-3xl md:text-5xl font-bold mb-8">Comprometimento em cada detalhe jurídico</h3>
             <p className="text-slate-400 mb-6 leading-relaxed text-lg">
               Fundado com a missão de oferecer uma advocacia consultiva e contenciosa de alta qualidade, o escritório Andrade & Bastos consolidou-se como referência pela sua atuação técnica e ética.
+            </p>
+            <p className="text-slate-400 mb-8 leading-relaxed">Desde 2001 no mercado e com mais de 4 mil processos ativos, a nossa banca foi fundada pelo Dr. Noel Andrade, que atua de forma ativa em nossos processos. Em 2005, o escritório agrega a experiência de um novo sócio, Dr. Éder Bastos, que traz uma visão expansionista ao escritório.
             </p>
             <p className="text-slate-400 mb-8 leading-relaxed">
               Entendemos que cada caso é único. Por isso, investimos em uma estrutura tecnológica moderna e em uma equipe constantemente atualizada para garantir os melhores resultados e uma comunicação transparente com nossos clientes.
