@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 interface NavbarProps {
@@ -11,20 +10,28 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
   const navLinks = [
     { name: 'Início', href: '#home' },
     { name: 'Serviços', href: '#services' },
+    { name: 'Sócios', href: '#partners' },
     { name: 'Sobre Nós', href: '#about' },
     { name: 'Contato', href: '#contact' },
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-        <div className="flex flex-col">
-          <span className={`brand text-2xl font-bold leading-none ${scrolled ? 'text-slate-900' : 'text-white'}`}>
-            ANDRADE & BASTOS
-          </span>
-          <span className={`text-[10px] tracking-[0.2em] font-light ${scrolled ? 'text-slate-600' : 'text-slate-200'}`}>
-            ADVOCACIA E CONSULTORIA
-          </span>
+        <div className="flex items-center gap-3">
+          <img 
+            src="https://raw.githubusercontent.com/petubb/Site-Abastos/main/image.png" 
+            alt="Andrade & Bastos Logo" 
+            className={`${scrolled ? 'h-12' : 'h-16'} transition-all duration-300`}
+          />
+          <div className="flex flex-col">
+            <span className={`brand text-xl font-bold leading-none ${scrolled ? 'text-slate-900' : 'text-white'}`}>
+              ANDRADE & BASTOS
+            </span>
+            <span className={`text-[9px] tracking-[0.2em] font-light ${scrolled ? 'text-slate-600' : 'text-slate-200'}`}>
+              ADVOCACIA E CONSULTORIA
+            </span>
+          </div>
         </div>
 
         {/* Desktop Menu */}

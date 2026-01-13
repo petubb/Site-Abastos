@@ -33,8 +33,10 @@ const Contact: React.FC = () => {
 
       alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
       setFormState({ name: '', email: '', phone: '', subject: '', message: '' });
-    } catch (error) {
-      alert('Erro ao enviar mensagem. Tente novamente.');
+    } catch (error: any) {
+      console.log('Erro completo:', error);
+      const errorMsg = error?.response?.status || error?.message || JSON.stringify(error);
+      alert(`Erro ao enviar: ${errorMsg}`);
       console.error('Email error:', error);
     } finally {
       setLoading(false);

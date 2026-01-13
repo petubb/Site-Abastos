@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import Partners from './components/Partners';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -24,6 +25,7 @@ const App: React.FC = () => {
       <main className="flex-grow">
         <Hero />
         <Services />
+        <Partners />
         <About />
         <Contact />
       </main>
